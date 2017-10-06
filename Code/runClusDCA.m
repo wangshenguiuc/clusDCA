@@ -7,7 +7,8 @@
 % cat 4 101-300
 
 specie='Yeast';
-path = '/home/swang141/research/BioNetwork/GoPrediction/clusDCA/';
+% addpath for your working directory
+%path = '/home/swang141/research/BioNetwork/GoPrediction/clusDCA/';
 %specie='Yeast';
 
 dim=2500;
@@ -19,9 +20,9 @@ nlabel = 4240;%13807;
 
 %16662 node for human, 6311 node for yeast
 
-% [lx, ly] = learnVector(specie, dim, bp, rspx, rspy,nnode);
-lx = dlmread(['/srv/data/swang141/swang141/OutputMatrix/NoIsoString',specie,'USX d=',num2str(dim),' us=1 rsp=0.5.txt']);
-ly = dlmread(['/srv/data/swang141/swang141/OutputMatrix/NoIsoString',specie,'USY d=',num2str(dim),' us=1 rsp=0.8 bp=0.8.txt']);
+[lx, ly] = learnVector(specie, dim, bp, rspx, rspy,nnode);
+% lx = dlmread(['/srv/data/swang141/swang141/OutputMatrix/NoIsoString',specie,'USX d=',num2str(dim),' us=1 rsp=0.5.txt']);
+% ly = dlmread(['/srv/data/swang141/swang141/OutputMatrix/NoIsoString',specie,'USY d=',num2str(dim),' us=1 rsp=0.8 bp=0.8.txt']);
 our_score = clusDCA(specie,lx,ly);
 
 %
