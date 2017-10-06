@@ -1,3 +1,8 @@
+### clusDCA
+## Author: Sheng Wang (swang141@illinois.edu)
+
+please run runClusDCA.m
+
 The code is written in MATLAB. 
 A sample yeast dataset is available at http://web.engr.illinois.edu/~swang141/Data/
 We first index genes and GO labels with positive integer numbers. And we construct network data files and annotation files. For example, for yeast STRING networks and GO ontology:
@@ -37,3 +42,9 @@ Format:
 5632	2
 ...
 Each row is a pair of two integer numbers. The first number is a gene id, and the second number is a GO label id which is assigned to the gene. 
+
+
+## please cite
+Sheng Wang*, Hyunghoon Cho*, ChengXiang Zhai, Bonnie Berger and Jian Peng. 
+Exploiting Ontology Graph for Predicting Sparsely Annotated Gene Function. 
+ISMB/ECCB, 2015. Bioinformatics, 2015. 
