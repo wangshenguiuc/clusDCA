@@ -10,6 +10,7 @@ We first index genes and GO labels with positive integer numbers. And we constru
 ---- MolecularNet1.txt ~ MolecularNet6.txt include 6 different yeast networks in STRING.
 
 Format:
+
 202	2173	0.588
 
 2173	202	0.588
@@ -34,6 +35,7 @@ Each row contains two integer numbers representing one directed edge from the fi
 We also include file GO_type.txt to annotate types of GO labels. 
 
 Format:
+
 1487	2
 
 3713	2
@@ -47,6 +49,7 @@ The first number is the GO label id, and the second number {1,2 or 3} indicates 
 ---- AnnotationAllNode.txt includes gene GO annotations.
 
 Format:
+
 1024	1
 
 5632	2
